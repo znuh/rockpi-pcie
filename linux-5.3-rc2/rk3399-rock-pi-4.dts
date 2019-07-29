@@ -159,6 +159,7 @@
 	phy-mode = "rgmii";
 	pinctrl-names = "default";
 	pinctrl-0 = <&rgmii_pins>;
+	snps,force_thresh_dma_mode; /* http://lkml.iu.edu/hypermail/linux/kernel/1801.2/05876.html */
 	snps,reset-gpio = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
 	snps,reset-active-low;
 	snps,reset-delays-us = <0 10000 50000>;
